@@ -1,0 +1,28 @@
+{
+  "title": "Configuration",
+  "description": "Configuration for Sink",
+  "type": "object",
+  "properties": {
+    "posturl": {
+      "type": "string"
+    },
+    "schemaurl": {
+      "type": "string"
+    },
+    "ipurl": {
+      "type": "string"
+    },
+    "period": {
+      "type": "integer"
+    },
+    "frequency": {
+      "type": "integer"
+    },
+    "tabactivity": {
+      "type": "boolean"
+    },
+    "debug": {
+      "type": "boolean"
+    }
+  }
+}

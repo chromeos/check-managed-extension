@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Check Managed",
+    "description": "Title in the store"
+  },
+  "appDesc": {
+    "message": "Check Managed logs device information to an unauthenticated data sink.",
+    "description": "Description as displayed in the store."
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"manifest_version": 3,
+	"name": "__MSG_appName__",
+	"version": "0.1.2",
+	"author": "Clay Smith",
+	"short_name": "__MSG_appName__",
+	"default_locale": "en",
+	"description": "__MSG_appDesc__",
+	"icons": {
+		"16": "images/icons/16.png",
+		"32": "images/icons/32.png",
+		"36": "images/icons/36.png",
+		"38": "images/icons/38.png",
+		"64": "images/icons/64.png",
+		"128": "images/icons/128.png"
+	},
+	"permissions": [
+		"enterprise.deviceAttributes",
+		"tabs",
+		"identity",
+		"identity.email",
+		"storage",
+		"alarms",
+		"management",
+		"enterprise.networkingAttributes",
+		"enterprise.hardwarePlatform",
+    "system.cpu"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"contentscript.js"
+			]
+		}
+	],
+	"storage": {
+		"managed_schema": "schema.json"
+	}
+}
